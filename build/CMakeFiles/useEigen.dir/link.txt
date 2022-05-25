@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libuseEigen.so -o ../lib/libuseEigen.so CMakeFiles/useEigen.dir/src/useEigen.cpp.o 

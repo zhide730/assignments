@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//include/useEigen.h
+Eigen/Core
+-
+Eigen/Dense
+-
+vector
+-
+fstream
+-
+
+/home/zzd/code/assignments/src/useEigen.cpp
+include/useEigen.h
+-
+
