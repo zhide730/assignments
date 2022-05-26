@@ -19,3 +19,9 @@ add_library(useEigen SHARED src/useEigen.cpp)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 add_executable(test1 examples/test1.cpp)
 target_link_libraries(test1 useEigen ${OpenCV_LIBS})
+
+add_executable(test2 examples/test2.cpp)
+target_link_libraries(test2 useEigen ${OpenCV_LIBS})
+
+add_executable(useOpencv examples/useOpencv.cpp)
+target_link_libraries(useOpencv ${OpenCV_LIBS})

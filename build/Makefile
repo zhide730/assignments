@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test2
+
+# Build rule for target.
+test2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test2
+.PHONY : test2
+
+# fast build rule for target.
+test2/fast:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/build
+.PHONY : test2/fast
+
+#=============================================================================
 # Target rules for targets named useEigen
 
 # Build rule for target.
@@ -122,6 +135,19 @@ useEigen: cmake_check_build_system
 useEigen/fast:
 	$(MAKE) -f CMakeFiles/useEigen.dir/build.make CMakeFiles/useEigen.dir/build
 .PHONY : useEigen/fast
+
+#=============================================================================
+# Target rules for targets named useOpencv
+
+# Build rule for target.
+useOpencv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 useOpencv
+.PHONY : useOpencv
+
+# fast build rule for target.
+useOpencv/fast:
+	$(MAKE) -f CMakeFiles/useOpencv.dir/build.make CMakeFiles/useOpencv.dir/build
+.PHONY : useOpencv/fast
 
 #=============================================================================
 # Target rules for targets named test1
@@ -163,6 +189,60 @@ examples/test1.cpp.s:
 	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/examples/test1.cpp.s
 .PHONY : examples/test1.cpp.s
 
+examples/test2.o: examples/test2.cpp.o
+
+.PHONY : examples/test2.o
+
+# target to build an object file
+examples/test2.cpp.o:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/examples/test2.cpp.o
+.PHONY : examples/test2.cpp.o
+
+examples/test2.i: examples/test2.cpp.i
+
+.PHONY : examples/test2.i
+
+# target to preprocess a source file
+examples/test2.cpp.i:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/examples/test2.cpp.i
+.PHONY : examples/test2.cpp.i
+
+examples/test2.s: examples/test2.cpp.s
+
+.PHONY : examples/test2.s
+
+# target to generate assembly for a file
+examples/test2.cpp.s:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/examples/test2.cpp.s
+.PHONY : examples/test2.cpp.s
+
+examples/useOpencv.o: examples/useOpencv.cpp.o
+
+.PHONY : examples/useOpencv.o
+
+# target to build an object file
+examples/useOpencv.cpp.o:
+	$(MAKE) -f CMakeFiles/useOpencv.dir/build.make CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.o
+.PHONY : examples/useOpencv.cpp.o
+
+examples/useOpencv.i: examples/useOpencv.cpp.i
+
+.PHONY : examples/useOpencv.i
+
+# target to preprocess a source file
+examples/useOpencv.cpp.i:
+	$(MAKE) -f CMakeFiles/useOpencv.dir/build.make CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.i
+.PHONY : examples/useOpencv.cpp.i
+
+examples/useOpencv.s: examples/useOpencv.cpp.s
+
+.PHONY : examples/useOpencv.s
+
+# target to generate assembly for a file
+examples/useOpencv.cpp.s:
+	$(MAKE) -f CMakeFiles/useOpencv.dir/build.make CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.s
+.PHONY : examples/useOpencv.cpp.s
+
 src/useEigen.o: src/useEigen.cpp.o
 
 .PHONY : src/useEigen.o
@@ -198,11 +278,19 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test2"
 	@echo "... useEigen"
+	@echo "... useOpencv"
 	@echo "... test1"
 	@echo "... examples/test1.o"
 	@echo "... examples/test1.i"
 	@echo "... examples/test1.s"
+	@echo "... examples/test2.o"
+	@echo "... examples/test2.i"
+	@echo "... examples/test2.s"
+	@echo "... examples/useOpencv.o"
+	@echo "... examples/useOpencv.i"
+	@echo "... examples/useOpencv.s"
 	@echo "... src/useEigen.o"
 	@echo "... src/useEigen.i"
 	@echo "... src/useEigen.s"
