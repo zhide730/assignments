@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test2
+# Target rules for targets named useOpencv
 
 # Build rule for target.
-test2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test2
-.PHONY : test2
+useOpencv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 useOpencv
+.PHONY : useOpencv
 
 # fast build rule for target.
-test2/fast:
-	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/build
-.PHONY : test2/fast
+useOpencv/fast:
+	$(MAKE) -f CMakeFiles/useOpencv.dir/build.make CMakeFiles/useOpencv.dir/build
+.PHONY : useOpencv/fast
 
 #=============================================================================
 # Target rules for targets named useEigen
@@ -137,17 +137,17 @@ useEigen/fast:
 .PHONY : useEigen/fast
 
 #=============================================================================
-# Target rules for targets named useOpencv
+# Target rules for targets named test2
 
 # Build rule for target.
-useOpencv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 useOpencv
-.PHONY : useOpencv
+test2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test2
+.PHONY : test2
 
 # fast build rule for target.
-useOpencv/fast:
-	$(MAKE) -f CMakeFiles/useOpencv.dir/build.make CMakeFiles/useOpencv.dir/build
-.PHONY : useOpencv/fast
+test2/fast:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/build
+.PHONY : test2/fast
 
 #=============================================================================
 # Target rules for targets named test1
@@ -161,6 +161,19 @@ test1: cmake_check_build_system
 test1/fast:
 	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/build
 .PHONY : test1/fast
+
+#=============================================================================
+# Target rules for targets named test3
+
+# Build rule for target.
+test3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test3
+.PHONY : test3
+
+# fast build rule for target.
+test3/fast:
+	$(MAKE) -f CMakeFiles/test3.dir/build.make CMakeFiles/test3.dir/build
+.PHONY : test3/fast
 
 examples/test1.o: examples/test1.cpp.o
 
@@ -215,6 +228,33 @@ examples/test2.s: examples/test2.cpp.s
 examples/test2.cpp.s:
 	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/examples/test2.cpp.s
 .PHONY : examples/test2.cpp.s
+
+examples/test3.o: examples/test3.cpp.o
+
+.PHONY : examples/test3.o
+
+# target to build an object file
+examples/test3.cpp.o:
+	$(MAKE) -f CMakeFiles/test3.dir/build.make CMakeFiles/test3.dir/examples/test3.cpp.o
+.PHONY : examples/test3.cpp.o
+
+examples/test3.i: examples/test3.cpp.i
+
+.PHONY : examples/test3.i
+
+# target to preprocess a source file
+examples/test3.cpp.i:
+	$(MAKE) -f CMakeFiles/test3.dir/build.make CMakeFiles/test3.dir/examples/test3.cpp.i
+.PHONY : examples/test3.cpp.i
+
+examples/test3.s: examples/test3.cpp.s
+
+.PHONY : examples/test3.s
+
+# target to generate assembly for a file
+examples/test3.cpp.s:
+	$(MAKE) -f CMakeFiles/test3.dir/build.make CMakeFiles/test3.dir/examples/test3.cpp.s
+.PHONY : examples/test3.cpp.s
 
 examples/useOpencv.o: examples/useOpencv.cpp.o
 
@@ -276,18 +316,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... test2"
-	@echo "... useEigen"
 	@echo "... useOpencv"
+	@echo "... useEigen"
+	@echo "... test2"
+	@echo "... rebuild_cache"
 	@echo "... test1"
+	@echo "... test3"
+	@echo "... edit_cache"
 	@echo "... examples/test1.o"
 	@echo "... examples/test1.i"
 	@echo "... examples/test1.s"
 	@echo "... examples/test2.o"
 	@echo "... examples/test2.i"
 	@echo "... examples/test2.s"
+	@echo "... examples/test3.o"
+	@echo "... examples/test3.i"
+	@echo "... examples/test3.s"
 	@echo "... examples/useOpencv.o"
 	@echo "... examples/useOpencv.i"
 	@echo "... examples/useOpencv.s"

@@ -60,15 +60,15 @@ include CMakeFiles/useOpencv.dir/flags.make
 CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.o: CMakeFiles/useOpencv.dir/flags.make
 CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.o: ../examples/useOpencv.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zzd/code/assignments/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.o -c /home/zzd/code/assignments/examples/useOpencv.cpp
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.o -c /home/zzd/code/assignments/examples/useOpencv.cpp
 
 CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzd/code/assignments/examples/useOpencv.cpp > CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.i
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzd/code/assignments/examples/useOpencv.cpp > CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.i
 
 CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzd/code/assignments/examples/useOpencv.cpp -o CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.s
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzd/code/assignments/examples/useOpencv.cpp -o CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.s
 
 CMakeFiles/useOpencv.dir/examples/useOpencv.cpp.o.requires:
 

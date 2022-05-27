@@ -60,15 +60,15 @@ include CMakeFiles/useEigen.dir/flags.make
 CMakeFiles/useEigen.dir/src/useEigen.cpp.o: CMakeFiles/useEigen.dir/flags.make
 CMakeFiles/useEigen.dir/src/useEigen.cpp.o: ../src/useEigen.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zzd/code/assignments/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/useEigen.dir/src/useEigen.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/useEigen.dir/src/useEigen.cpp.o -c /home/zzd/code/assignments/src/useEigen.cpp
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/useEigen.dir/src/useEigen.cpp.o -c /home/zzd/code/assignments/src/useEigen.cpp
 
 CMakeFiles/useEigen.dir/src/useEigen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/useEigen.dir/src/useEigen.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzd/code/assignments/src/useEigen.cpp > CMakeFiles/useEigen.dir/src/useEigen.cpp.i
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzd/code/assignments/src/useEigen.cpp > CMakeFiles/useEigen.dir/src/useEigen.cpp.i
 
 CMakeFiles/useEigen.dir/src/useEigen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/useEigen.dir/src/useEigen.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzd/code/assignments/src/useEigen.cpp -o CMakeFiles/useEigen.dir/src/useEigen.cpp.s
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzd/code/assignments/src/useEigen.cpp -o CMakeFiles/useEigen.dir/src/useEigen.cpp.s
 
 CMakeFiles/useEigen.dir/src/useEigen.cpp.o.requires:
 

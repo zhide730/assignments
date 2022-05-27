@@ -25,3 +25,6 @@ target_link_libraries(test2 useEigen ${OpenCV_LIBS})
 
 add_executable(useOpencv examples/useOpencv.cpp)
 target_link_libraries(useOpencv ${OpenCV_LIBS})
+
+add_executable(test3 examples/test3.cpp)
+target_link_libraries(test3 ${OpenCV_LIBS})

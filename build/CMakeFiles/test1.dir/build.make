@@ -60,15 +60,15 @@ include CMakeFiles/test1.dir/flags.make
 CMakeFiles/test1.dir/examples/test1.cpp.o: CMakeFiles/test1.dir/flags.make
 CMakeFiles/test1.dir/examples/test1.cpp.o: ../examples/test1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zzd/code/assignments/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test1.dir/examples/test1.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test1.dir/examples/test1.cpp.o -c /home/zzd/code/assignments/examples/test1.cpp
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test1.dir/examples/test1.cpp.o -c /home/zzd/code/assignments/examples/test1.cpp
 
 CMakeFiles/test1.dir/examples/test1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test1.dir/examples/test1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzd/code/assignments/examples/test1.cpp > CMakeFiles/test1.dir/examples/test1.cpp.i
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzd/code/assignments/examples/test1.cpp > CMakeFiles/test1.dir/examples/test1.cpp.i
 
 CMakeFiles/test1.dir/examples/test1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test1.dir/examples/test1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzd/code/assignments/examples/test1.cpp -o CMakeFiles/test1.dir/examples/test1.cpp.s
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzd/code/assignments/examples/test1.cpp -o CMakeFiles/test1.dir/examples/test1.cpp.s
 
 CMakeFiles/test1.dir/examples/test1.cpp.o.requires:
 
